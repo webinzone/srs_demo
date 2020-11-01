@@ -6,13 +6,14 @@ import Create from './components/create.component';
 import Edit from './components/edit.component';
 import Index from './components/index.component';
 import Create_service_agreement from './components/create_service_agreement';
+import Transfer_form from './components/transfer_form';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="container">
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <nav className="navbar navbar-expand-lg navbar-dark  bg-primary">
             <Link to={'/'} className="navbar-brand">SRS MANAGER</Link>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mr-auto">
@@ -29,6 +30,10 @@ class App extends Component {
                 <li className="nav-item">
                   <Link to={'/service_agreement'} className="nav-link">Residential Service Agreement</Link>
                 </li>                
+                <li className="nav-item">
+                  <Link to={'/transfer_form'} className="nav-link">Transfer Form</Link>
+                </li>                
+
               </ul>
             </div>
           </nav> <br/>
@@ -38,6 +43,7 @@ class App extends Component {
               <Route path='/edit/:id' component={ Edit } />
               <Route path='/index' component={ Index } />
               <Route path='/service_agreement' component={ Create_service_agreement } />
+              <Route path='/transfer_form' component={ Transfer_form } />
 
           </Switch>
         </div>

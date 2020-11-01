@@ -1,7 +1,12 @@
 .App {
   text-align: center;
-}
+  background-color: #282c34;
 
+}
+.App-body{
+  background-color: #282c34;
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,7 +26,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: blue;
 }
 
 .App-link {
